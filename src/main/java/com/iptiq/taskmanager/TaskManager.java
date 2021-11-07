@@ -1,11 +1,13 @@
 package com.iptiq.taskmanager;
 
 import com.iptiq.taskmanager.replacement.DefaultReplacementStrategy;
-import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.Clock;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.function.Predicate;
 
 import static java.util.stream.Collectors.toList;
