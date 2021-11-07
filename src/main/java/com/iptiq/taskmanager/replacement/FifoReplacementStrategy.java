@@ -4,7 +4,6 @@ import com.iptiq.taskmanager.Process;
 import com.iptiq.taskmanager.ReplacementStrategy;
 
 import java.util.Collection;
-import java.util.Comparator;
 import java.util.Optional;
 
 import static java.util.Comparator.comparing;

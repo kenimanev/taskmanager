@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.ToString;
 import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
 
 import java.time.Clock;
 import java.time.LocalDateTime;
@@ -15,7 +16,7 @@ import java.time.LocalDateTime;
 @Getter
 @Builder
 @ToString
-@Log
+@Slf4j
 public class Process {
 
     static enum State {

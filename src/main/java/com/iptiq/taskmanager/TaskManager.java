@@ -2,6 +2,7 @@ package com.iptiq.taskmanager;
 
 import com.iptiq.taskmanager.replacement.DefaultReplacementStrategy;
 import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
 
 import java.time.Clock;
 import java.util.*;
@@ -18,7 +19,7 @@ import static java.util.stream.Collectors.toList;
  *
  * For more on the characteristics of a good API, please see https://youtu.be/aAb7hSCtvGw?t=367
  */
-@Log
+@Slf4j
 public class TaskManager {
 
     private static final int DEFAULT_CAPACITY = 10;
