@@ -7,6 +7,8 @@ import java.util.Collection;
 import java.util.Comparator;
 import java.util.Optional;
 
+import static java.util.Comparator.comparing;
+
 /**
  * Picks the oldest process to kill.
  */
@@ -16,6 +18,6 @@ public class FifoReplacementStrategy implements ReplacementStrategy {
     public Optional<Process> choose(Collection<Process> processes, Process newProcess) {
             return processes
                     .stream()
-                    .min(Comparator.comparing(Process::getTimeStarted));
+                    .min(comparing(Process::getTimeStarted));
     }
 }
