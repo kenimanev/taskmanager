@@ -23,7 +23,7 @@ interview stage.
 
 ## Enum vs. Interface
 You may ask why I chose to use Enum for the `ListOrder` and a full-blown interface for `ReplacementStrategy`. After all,
-these appear to be similar: in terms of complexity both boil down to a single function. 
+these appear to be similar: both boil down to a single function. 
 
 Well, I felt the ways to sort are well-defined and can be selected from a set of predefined options. Even if we decide 
 to add new sorting orders, these will follow the same pattern of code, and thus can be coupled in a single enum.
@@ -47,9 +47,9 @@ I don't yet see how it will be used in a larger context. Thus creating a prematu
 "prepare for the future" felt superfluous.
 
 ## Why do you use a Map to store processes?
-I agree, that taking `Set<Process>` would have been the more natural choice. However, I really 
+I agree that `Set<Process>` would have been the more natural choice. However, I really 
 wanted an easy way to verify that only a single process with given `pid` can be active at any point in time, and 
-I decided to use `Map<Integer, Process>` to allow the check.
+I decided to use `Map<Integer, Process>` to help me do the check.
 
 ## Do you always write so many comments?
 No, not really. I demand from myself to produce simple, understandable code. 
@@ -69,10 +69,10 @@ method, which will be invoked when the process dies of "natural" causes.
 
 This will then need to modify the internal state of the TaskManager instance.
 
-The current submission does not address this important point, and is thus very incomplete. 
-However, if we decide to implement support for real OS processes, this may be too much. I'd 
+The current submission does not address this important point, which makes it very incomplete. 
+However, it may be too early to implement support for real OS processes. I'd 
 need to learn more from the interviewers (or the Product Owners) before proceeding with
-tricky implementation.
+such a tricky thing.
 
 For now, the submission demonstrates my ability to code.
 
